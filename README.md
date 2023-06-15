@@ -25,7 +25,7 @@ import (
 	"github.com/ethereum/go-ethereum/crypto"
 	"github.com/joho/godotenv"
 
-	sign "github.com/etaaa/Golang-Ethereum-Personal-Sign"
+	ps "github.com/etaaa/Golang-Ethereum-Personal-Sign"
 )
 
 func main() {
@@ -41,7 +41,7 @@ func main() {
 		log.Fatal(err)
 	}
 	// Sign message
-	signature, err := sign.PersonalSign("Hello World.", privateKey)
+	signature, err := ps.PersonalSign("Hello World.", privateKey)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -50,7 +50,7 @@ func main() {
 ```
 
 ## Questions
-For any questions feel free to add and DM me on Discord (eta#1656).
+For any questions feel free to DM me on Discord (@itseta).
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change. Please make sure to update tests as appropriate.
